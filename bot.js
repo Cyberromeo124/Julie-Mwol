@@ -12,7 +12,7 @@ const events = require("./events");
 const chalk = require('chalk');
 const config = require('./config');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
-const {Message, StringSession, Image, Video} = require('./julie/');
+const {Message, StringSession, Image, Video} = require('./lol-bot/');
 const { DataTypes } = require('sequelize');
 const { getMessage } = require("./plugins/sql/greetings");
 const axios = require('axios');
@@ -136,7 +136,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('✅ Julie Mwol working!')
+            chalk.green.bold('✅ lol-bot Mwol working!')
         );
         await new Promise(r => setTimeout(r, 1100));
 
@@ -390,7 +390,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                                     'Gerçekleşen Hata: ' + error + '\n\n'
                                     , MessageType.text);
                             } else {
-                                await conn.sendMessage(conn.user.jid, '*~_________~ 𝕁𝕦𝕝𝕚𝕖𝕄𝕨𝕠𝕝 ~______~*' +
+                                await conn.sendMessage(conn.user.jid, '*~_________~ lol-bot ~______~*' +
                                     '\n\n*🧞‍♂️ ' + error + '*\n\n```Report errors\njoin with +91 \nchat.whatsapp.com/Gthpm3ob1y16Oh5qv0xSSr``` ' 
                                     , MessageType.text);
                             }
